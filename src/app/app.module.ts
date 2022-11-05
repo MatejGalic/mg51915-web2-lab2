@@ -10,9 +10,10 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { AuthButtonComponent } from './components/auth-button/auth-button.component';
 import { VulnerabilityButtonComponent } from './components/vulnerability-button/vulnerability-button.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 @NgModule({
-  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent],
+  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
