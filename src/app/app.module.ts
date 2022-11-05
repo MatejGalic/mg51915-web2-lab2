@@ -6,17 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { XssComponent } from './components/xss/xss.component';
 
+import { AuthModule } from '@auth0/auth0-angular';
+import { AuthButtonComponent } from './components/auth-button/auth-button.component';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    XssComponent
-  ],
+  declarations: [AppComponent, XssComponent, AuthButtonComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AuthModule.forRoot({
+      domain: 'dev-0o15xqyhb5vt8cs0.us.auth0.com',
+      clientId: 'ayTCNxSGPl5z0p7AY6yKj9D4oYb3yiep',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
