@@ -11,9 +11,11 @@ import { AuthButtonComponent } from './components/auth-button/auth-button.compon
 import { VulnerabilityButtonComponent } from './components/vulnerability-button/vulnerability-button.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { AdminOverviewComponent } from './pages/admin-overview/admin-overview.component';
+import { UnauthorizedComponent } from './pages/unauthorized/unauthorized.component';
 
 @NgModule({
-  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent],
+  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent, AdminOverviewComponent, UnauthorizedComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

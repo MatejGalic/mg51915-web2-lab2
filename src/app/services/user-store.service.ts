@@ -18,6 +18,5 @@ export class UserStoreService {
   }
 
   constructor() {
-    console.log(this._user);
   }
 }
