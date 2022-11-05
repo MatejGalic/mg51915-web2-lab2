@@ -4,7 +4,9 @@ import { RoleEnum } from './enums/role-enum';
 import { RoleGuard } from './guards/role.guard';
 import { AdminOverviewComponent } from './pages/admin-overview/admin-overview.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { ManagerOverviewComponent } from './pages/manager-overview/manager-overview.component';
 import { UnauthorizedComponent } from './pages/unauthorized/unauthorized.component';
+import { UserOverviewComponent } from './pages/user-overview/user-overview.component';
 
 const routes: Routes = [
   {
@@ -16,19 +18,19 @@ const routes: Routes = [
     component: UnauthorizedComponent,
   },
   {
-    path: 'users',
-    component: AdminOverviewComponent,
+    path: 'user',
+    component: UserOverviewComponent,
+    canActivate: [RoleGuard],
+    data: { roles: [RoleEnum.Admin, RoleEnum.Manager, RoleEnum.Regular] },
+  },
+  {
+    path: 'manager',
+    component: ManagerOverviewComponent,
     canActivate: [RoleGuard],
     data: { roles: [RoleEnum.Admin, RoleEnum.Manager] },
   },
   {
-    path: 'managers',
-    component: AdminOverviewComponent,
-    canActivate: [RoleGuard],
-    data: { roles: [RoleEnum.Admin] },
-  },
-  {
-    path: 'admins',
+    path: 'admin',
     component: AdminOverviewComponent,
     canActivate: [RoleGuard],
     data: { roles: [RoleEnum.Admin] },

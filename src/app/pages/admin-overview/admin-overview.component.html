@@ -1,1 +1,8 @@
-<p>admin-overview works!</p>
+<div *ngFor="let user of users">
+  <div>
+    <b> {{ user.fullName }}</b>
+  </div>
+  <div>E-mail: {{ user.email }}</div>
+  <div>Role: {{ roleEnum[user.role] }}</div>
+  <p></p>
+</div>

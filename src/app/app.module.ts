@@ -13,9 +13,11 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AdminOverviewComponent } from './pages/admin-overview/admin-overview.component';
 import { UnauthorizedComponent } from './pages/unauthorized/unauthorized.component';
+import { ManagerOverviewComponent } from './pages/manager-overview/manager-overview.component';
+import { UserOverviewComponent } from './pages/user-overview/user-overview.component';
 
 @NgModule({
-  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent, AdminOverviewComponent, UnauthorizedComponent],
+  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent, AdminOverviewComponent, UnauthorizedComponent, ManagerOverviewComponent, UserOverviewComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

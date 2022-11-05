@@ -59,5 +59,18 @@ export class DbContextMockService {
     },
   ];
 
+  get allUsers() {
+    return this.users;
+  }
+  get regularUsers() {
+    return this.users.filter((u) => u.role === RoleEnum.Regular);
+  }
+  get managerUsers() {
+    return this.users.filter((u) => u.role === RoleEnum.Manager);
+  }
+  get adminUsers() {
+    return this.users.filter((u) => u.role === RoleEnum.Admin);
+  }
+
   constructor() {}
 }
