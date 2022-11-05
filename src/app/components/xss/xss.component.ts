@@ -8,8 +8,6 @@ import { VulnerabilityService } from 'src/app/services/vulnerability.service';
   styleUrls: ['./xss.component.scss'],
 })
 export class XssComponent implements OnInit {
-  @ViewChild('textareaInjection') divElement: ElementRef;
-
   textarea: string = '';
   htmltext: any;
   constructor(
