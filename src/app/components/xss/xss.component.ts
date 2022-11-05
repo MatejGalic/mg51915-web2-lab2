@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { VulnerabilityService } from 'src/app/services/vulnerability.service';
 
 @Component({
   selector: 'app-xss',
@@ -8,15 +9,17 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class XssComponent implements OnInit {
   @ViewChild('textareaInjection') divElement: ElementRef;
-  isVulnerable: boolean = false;
 
   textarea: string = '';
   htmltext: any;
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(
+    private sanitizer: DomSanitizer,
+    private vulnService: VulnerabilityService
+  ) {}
 
   ngOnInit(): void {}
   injectHtml() {
-    let value = this.isVulnerable
+    let value = this.vulnService.vulnerable
       ? this.sanitizer.bypassSecurityTrustHtml(this.textarea)
       : this.textarea;
     this.htmltext = value;

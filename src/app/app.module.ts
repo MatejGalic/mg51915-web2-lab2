@@ -8,9 +8,10 @@ import { XssComponent } from './components/xss/xss.component';
 
 import { AuthModule } from '@auth0/auth0-angular';
 import { AuthButtonComponent } from './components/auth-button/auth-button.component';
+import { VulnerabilityButtonComponent } from './components/vulnerability-button/vulnerability-button.component';
 
 @NgModule({
-  declarations: [AppComponent, XssComponent, AuthButtonComponent],
+  declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

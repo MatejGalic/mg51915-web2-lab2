@@ -1,9 +1,5 @@
-<div class="m-1 p-1">
-  <div>
-    <input id="vulnerable" [(ngModel)]="isVulnerable" type="checkbox" />
-    <label for="vulnerable">Toggle vulnerability</label>
-  </div>
-
+<div>
+  <app-vulnerability-button></app-vulnerability-button>
   <div class="mt">
     <textarea [(ngModel)]="textarea"></textarea>
     <button (click)="injectHtml()" class="block">Add comment</button>
