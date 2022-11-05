@@ -11,3 +11,11 @@ mat-toolbar {
     color: white;
   }
 }
+
+.sidenav-container {
+  height: calc(100% - 65px);
+
+  &-sidebar {
+    width: 180px;
+  }
+}

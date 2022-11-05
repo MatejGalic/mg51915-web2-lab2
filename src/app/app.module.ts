@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +13,7 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthButtonComponent } from './components/auth-button/auth-button.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { VulnerabilityButtonComponent } from './components/vulnerability-button/vulnerability-button.component';
 import { XssComponent } from './components/xss/xss.component';
@@ -32,6 +35,7 @@ import { UserOverviewComponent } from './pages/user-overview/user-overview.compo
     UnauthorizedComponent,
     ManagerOverviewComponent,
     UserOverviewComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,8 @@ import { UserOverviewComponent } from './pages/user-overview/user-overview.compo
     MatToolbarModule,
     MatInputModule,
     MatSlideToggleModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

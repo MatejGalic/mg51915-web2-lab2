@@ -5,4 +5,12 @@
   </div>
   <app-auth-button></app-auth-button>
 </mat-toolbar>
-<router-outlet></router-outlet>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav-container-sidebar" mode="side" opened>
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

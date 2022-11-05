@@ -1,0 +1,13 @@
+<mat-list role="list">
+  <mat-list-item
+    *ngFor="let link of links"
+    [routerLink]="link.path"
+    class="link-item"
+    [ngClass]="{
+      ' hide ': !link.display,
+      ' bold ': '/' + link.path === router.url
+    }"
+    role="listitem"
+    >{{ link.name }}
+  </mat-list-item>
+</mat-list>
