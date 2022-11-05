@@ -1,4 +1,8 @@
-<nav>
-  <h1><a [routerLink]="''">Homepage</a></h1>
-</nav>
+<mat-toolbar color="primary">
+  <div class="flex header-left">
+    <a [routerLink]="''"> <b>Homepage</b></a>
+    <app-vulnerability-button></app-vulnerability-button>
+  </div>
+  <app-auth-button></app-auth-button>
+</mat-toolbar>
 <router-outlet></router-outlet>

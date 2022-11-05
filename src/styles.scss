@@ -33,16 +33,11 @@ body {
 }
 
 .block {
-  display: block;
+  display: block !important;
 }
 
 .flex {
-  display: flex;
-}
-
-textarea {
-  width: 500px;
-  height: 150px;
+  display: flex !important;
 }
 
 body {

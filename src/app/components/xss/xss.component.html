@@ -1,8 +1,12 @@
 <div>
-  <app-vulnerability-button></app-vulnerability-button>
   <div class="mt">
-    <textarea [(ngModel)]="textarea"></textarea>
-    <button (click)="injectHtml()" class="block">Add comment</button>
+    <mat-form-field class="block" appearance="fill">
+      <textarea matInput [(ngModel)]="textarea"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="injectHtml()" class="block">
+      Add comment
+    </button>
     <div [innerHTML]="htmltext"></div>
   </div>
 </div>

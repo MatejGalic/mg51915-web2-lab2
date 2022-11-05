@@ -1,0 +1,13 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  align-items: center;
+  a {
+    padding: 10px;
+    margin-right: 50px;
+    text-decoration: none !important;
+    color: white;
+  }
+}
