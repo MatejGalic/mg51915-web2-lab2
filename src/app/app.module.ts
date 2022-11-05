@@ -15,6 +15,7 @@ import { AdminOverviewComponent } from './pages/admin-overview/admin-overview.co
 import { UnauthorizedComponent } from './pages/unauthorized/unauthorized.component';
 import { ManagerOverviewComponent } from './pages/manager-overview/manager-overview.component';
 import { UserOverviewComponent } from './pages/user-overview/user-overview.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, XssComponent, AuthButtonComponent, VulnerabilityButtonComponent, UserProfileComponent, HomepageComponent, AdminOverviewComponent, UnauthorizedComponent, ManagerOverviewComponent, UserOverviewComponent],
@@ -27,6 +28,7 @@ import { UserOverviewComponent } from './pages/user-overview/user-overview.compo
       clientId: 'ayTCNxSGPl5z0p7AY6yKj9D4oYb3yiep',
       cacheLocation: 'localstorage'
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
