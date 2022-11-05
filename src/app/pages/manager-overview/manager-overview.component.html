@@ -1,3 +1,14 @@
-<div *ngFor="let user of users">
-  {{ user.fullName }}
+<div class="flex m-1" style="justify-content: space-between">
+  <div>
+    <p *ngFor="let user of users">
+      {{ user.fullName }}
+    </p>
+  </div>
+
+  <div class="flex" style="justify-content: center; width: 100%;">
+    <img
+      style="height: 450px"
+      src="https://www.datapine.com/images/management-dashboard-example.png"
+    />
+  </div>
 </div>

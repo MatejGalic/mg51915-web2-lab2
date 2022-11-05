@@ -1,8 +1,18 @@
-<div *ngFor="let user of users">
+<div class="flex m-1" style="justify-content: space-between">
   <div>
-    <b> {{ user.fullName }}</b>
+    <div *ngFor="let user of users">
+      <div>
+        <b> {{ user.fullName }}</b>
+      </div>
+      <div>E-mail: {{ user.email }}</div>
+      <div>Role: {{ roleEnum[user.role] }}</div>
+      <p></p>
+    </div>
   </div>
-  <div>E-mail: {{ user.email }}</div>
-  <div>Role: {{ roleEnum[user.role] }}</div>
-  <p></p>
+  <div class="flex" style="justify-content: center; width: 100%">
+    <img
+      style="height: 500px"
+      src="https://pixinvent.com/demo/vuexy-react-admin-dashboard-template/landing/img/bg-img/dark.jpg"
+    />
+  </div>
 </div>
