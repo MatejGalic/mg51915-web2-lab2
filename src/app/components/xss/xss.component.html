@@ -1,12 +1,19 @@
-<div>
+<div class="flex" style="gap: 10px">
   <div class="mt">
-    <mat-form-field class="block" appearance="fill">
-      <textarea matInput [(ngModel)]="textarea"></textarea>
+    <mat-form-field style="width: 500px" class="block" appearance="fill">
+      <textarea
+        style="min-height: 150px"
+        matInput
+        [(ngModel)]="textarea"
+      ></textarea>
     </mat-form-field>
 
     <button mat-raised-button (click)="injectHtml()" class="block">
       Add comment
     </button>
+  </div>
+  <div>
+    <h2>Submitted comment example:</h2>
     <div [innerHTML]="htmltext"></div>
   </div>
 </div>
