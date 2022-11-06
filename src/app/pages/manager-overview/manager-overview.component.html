@@ -1,14 +1,18 @@
 <div class="flex m-1" style="justify-content: space-between">
-  <div>
+  <div style="width: 250px">
+    <h2>Current users:</h2>
     <p *ngFor="let user of users">
       {{ user.fullName }}
     </p>
   </div>
 
-  <div class="flex" style="justify-content: center; width: 100%;">
-    <img
-      style="height: 450px"
-      src="https://www.datapine.com/images/management-dashboard-example.png"
-    />
+  <div class="flex" style="justify-content: center; width: 100%">
+    <div class="flex" style="flex-direction: column">
+      <h2>Dashboard:</h2>
+      <img
+        style="height: 450px"
+        src="https://www.datapine.com/images/management-dashboard-example.png"
+      />
+    </div>
   </div>
 </div>

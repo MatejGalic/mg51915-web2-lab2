@@ -1,5 +1,12 @@
+<h2>My info:</h2>
 <ul *ngIf="user">
-  <li>{{ user.fullName }}</li>
-  <li>{{ user.email }}</li>
-  <li>{{ roleEnum[user.role] }}</li>
+  <li>Name: {{ user.fullName }}</li>
+  <li>E-mail: {{ user.email }}</li>
+  <li>Role: {{ roleEnum[user.role] }}</li>
 </ul>
+
+<!-- <mat-list *ngIf="user" role="list">
+  <mat-list-item> Name: {{ user.fullName }} </mat-list-item>
+  <mat-list-item> E-mail: {{ user.email }} </mat-list-item>
+  <mat-list-item> Role: {{ roleEnum[user.role] }} </mat-list-item>
+</mat-list> -->
